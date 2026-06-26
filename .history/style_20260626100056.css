@@ -206,7 +206,12 @@ nav a:hover{
     border:1px solid #7b2cbf;
 
 }
+.categoria i{
 
+    font-size:55px;
+    color:#7b2cbf;
+
+}
 
 /* PRODUCTOS */
 

@@ -142,71 +142,38 @@ nav a:hover{
 }
 
 /* CATEGORIAS */
+
 .categorias{
     width:90%;
-    margin:50px auto;
+    margin:auto;
 }
 
 .categorias h2{
     text-align:center;
-    margin-bottom:35px;
-    font-size:2rem;
+    margin:30px 0;
 }
 
 .contenedor-categorias{
-
-    display:grid;
-    grid-template-columns:repeat(5,1fr);
-    gap:25px;
-
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    
 }
 
 .categoria{
-
-    background:#fff;
-
-    border-radius:15px;
-
-    padding:25px 10px;
-
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:18px;
-
-    text-decoration:none;
-    color:#333;
-
-    transition:.25s;
-
-    box-shadow:0 3px 12px rgba(123,44,191,.12);
-
-}
-
-.categoria img{
-
-    width:70px;
-    height:70px;
-    object-fit:contain;
-
-}
-
-.categoria span{
-
-    font-weight:600;
-
+    background:white;
+    width:15%;
+    text-align:center;
+    padding:20px;
+    border-radius:10px;
+    font-size:200%;
+    transition:.3s;
+    box-shadow:0 2px 10px #7a2cbf4a;
 }
 
 .categoria:hover{
-
-    transform:translateY(-8px);
-
-    box-shadow:0 12px 30px rgba(123,44,191,.25);
-
-    border:1px solid #7b2cbf;
-
+    transform:translateY(-5px);
 }
-
 
 /* PRODUCTOS */
 
@@ -236,7 +203,6 @@ nav a:hover{
 }
 
 .card:hover{
-    box-shadow:0 10px 25px rgba(123,44,191,.25);
     transform:scale(1.03);
 }
 
@@ -267,17 +233,6 @@ nav a:hover{
     cursor:pointer;
 }
 
-.card button,
-.hero button{
-    transition:.25s;
-
-}
-
-.card button:hover,
-.hero button:hover{
-    background:#5e1ea5;
-
-}
 /* FOOTER */
 
 footer{
@@ -287,17 +242,6 @@ footer{
     padding:20px;
 }
 
-@media(max-width:900px){
-
-    nav{
-        display:none;
-    }
-
-    .acciones input{
-        display:none;
-    }
-
-}
 /*
 *{
     margin: 0;
