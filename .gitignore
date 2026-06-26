@@ -1,0 +1,19 @@
+# Configuración del editor
+.vscode/
+.idea/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos temporales
+*.log
+*.tmp
+*.swp
+
+# Builds o distribuciones (si llegás a usar empaquetadores)
+dist/
+build/
+
+# Archivos de respaldo
+*.bak
