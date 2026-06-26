@@ -1,0 +1,50 @@
+/*
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(31, 0, 35);
+    color: rgb(98, 0, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#contentItemsCarrusel{
+    border: 5px solid rgb(2, 2, 82); 
+    height: 200px;
+    overflow: hidden;
+}
+
+.itemCarrusel{
+    border: 2px solid black;
+    height: 200px;
+    position: relative;
+}
+.tarjetaCarrusel{
+    background-color: rgb(70, 60, 2);
+    height: 100%;
+
+}
+.flechasCarrusel{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#tarjeta1{
+    background-color: rgb(159, 159, 2);
+}
+#tarjeta2{
+    background-color: rgb(3, 3, 182);
+}
+#tarjeta3{
+    background-color: green;
+}
+    
+*/
