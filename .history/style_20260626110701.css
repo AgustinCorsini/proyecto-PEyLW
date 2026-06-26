@@ -1,19 +1,12 @@
-/* Reinicia los márgenes y paddings por defecto del navegador */
 *{
     margin:0;
     padding:0;
-
     box-sizing:border-box;
-
-    /* Fuente utilizada en toda la página */
     font-family:Arial, Helvetica, sans-serif;
-
 }
-/* Hace que los enlaces internos se desplacen suavemente */
 html {
     scroll-behavior: smooth;
 }
-
 body{
     background:#f5f5f5;
 }
@@ -22,25 +15,18 @@ body{
 
 header{
     background:white;
-    /* Flexbox distribuye los elementos horizontalmente */
     display:flex;
-
-    /* Separa logo, navegación y acciones */
     justify-content:space-between;
-
     align-items:center;
     padding:15px 8%;
     box-shadow:0 2px 10px #7b2cbf;
     border-bottom-left-radius:10px;
     border-bottom-right-radius:10px;
 }
-
-
 /*--- Menú Hamburguesa ---*/
 .header-izquierda{
     display:flex;
     align-items:center;
-    /* Espacio entre los elementos hijos del contenedor flex */
     gap:18px;
 }
 .menu-hamburguesa{
@@ -53,11 +39,10 @@ header{
 
     padding:8px;
     border-radius:8px;
-    /* Genera una transición suave al cambiar una propiedad */
+
     transition:.3s;
 }
 
-/*Hover --> Se ejecuta cuando el usuario pasa el cursor sobre el elemento */
 .menu-hamburguesa:hover{
     background:#f0f0f0;
     color:#7b2cbf;
@@ -99,6 +84,7 @@ nav a:hover{
     color:#7b2cbf;
 }
 
+/* --- DROPDOWN --- */
 
 nav{
 
@@ -107,52 +93,8 @@ nav{
 
 }
 
-nav a.active,
-.dropdown-btn.active{
-    color: #7b2cbf;
-    font-weight: bold;
-    position: relative;
-}
-
-nav a.active::after,
-.dropdown-btn.active::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    width: 100%;
-    height: 3px;
-    background: #7b2cbf;
-    border-radius: 10px;
-}
-nav a,
-.dropdown-btn{
-    position: relative;
-}
-
-nav a::after,
-.dropdown-btn::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    width: 0;
-    height: 3px;
-    background: #7b2cbf;
-    transition: width .3s ease;
-}
-
-nav a:hover::after,
-.dropdown-btn:hover::after,
-nav a.active::after,
-.dropdown-btn.active::after{
-
-    width: 100%;
-}
-
-/* --- DROPDOWN --- */
 .dropdown{
-    /* Permite posicionar el menú desplegable respecto a este contenedor */
+
     position:relative;
 
 }
@@ -179,7 +121,7 @@ nav a.active::after,
 }
 
 .dropdown-menu{
-    /* El menú se posiciona respecto del elemento padre (.dropdown) */
+
     position:absolute;
 
     top:45px;
@@ -191,28 +133,24 @@ nav a.active::after,
 
     border-radius:12px;
 
-    box-shadow:0 2px 10px #7a2cbfc2;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
 
     overflow:hidden;
-    /* Oculta visualmente el menú sin eliminarlo del documento */
+
     opacity:0;
 
-    /* Evita que el usuario pueda interactuar con el menú oculto */ 
     visibility:hidden;
 
-    /* Desplaza el menú 10px hacia abajo para crear el efecto de aparición */
     transform:translateY(10px);
 
     transition:.25s;
 
-    /* Coloca el menú por encima del resto de los elementos */
     z-index:1000;
 
 }
 
 .dropdown:hover .dropdown-menu{
 
-    opacity:1;
 
     visibility:visible;
 
@@ -260,7 +198,7 @@ nav a.active::after,
 
 .dropdown-menu{
     
-    border-top:4px solid #7b2cbf;
+    border-bottom:4px solid #7b2cbf;
     
 }
 
@@ -338,10 +276,8 @@ nav a.active::after,
 }
 
 .contenedor-categorias{
-    /* Organiza los elementos en forma de cuadrícula */
-    display:grid;
 
-    /* Crea cinco columnas de igual tamaño */
+    display:grid;
     grid-template-columns:repeat(5,1fr);
     gap:25px;
 
@@ -408,7 +344,6 @@ nav a.active::after,
 
 .grid-productos{
     display:grid;
-    /* Crea columnas automáticamente según el espacio disponible */
     grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
     gap:25px;
 }
@@ -430,7 +365,6 @@ nav a.active::after,
 .card img{
     width:100%;
     height:180px;
-    /* La imagen llena el contenedor sin deformarse */
     object-fit:cover;
 }
 

@@ -340,7 +340,7 @@ nav a.active::after,
 .contenedor-categorias{
     /* Organiza los elementos en forma de cuadrícula */
     display:grid;
-
+    
     /* Crea cinco columnas de igual tamaño */
     grid-template-columns:repeat(5,1fr);
     gap:25px;
@@ -408,7 +408,6 @@ nav a.active::after,
 
 .grid-productos{
     display:grid;
-    /* Crea columnas automáticamente según el espacio disponible */
     grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
     gap:25px;
 }
@@ -430,7 +429,6 @@ nav a.active::after,
 .card img{
     width:100%;
     height:180px;
-    /* La imagen llena el contenedor sin deformarse */
     object-fit:cover;
 }
 

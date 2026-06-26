@@ -430,7 +430,6 @@ nav a.active::after,
 .card img{
     width:100%;
     height:180px;
-    /* La imagen llena el contenedor sin deformarse */
     object-fit:cover;
 }
 
