@@ -33,20 +33,23 @@
 
         </div>
 
-<nav>
+        <nav>
+            <!-- La clase active indica la página actual -->
+            <a href="main.html" class="active">Inicio</a>
 
-    <a href="main.html" class="nav-link active">Inicio</a>
+            <a href="productos.html">Productos</a>
 
-    <a href="productos.html" class="nav-link">Productos</a>
+            <!-- Menú desplegable de categorías -->
+            <div class="dropdown">
 
-    <div class="dropdown">
+                <!-- Botón que despliega el menú -->
+                <a href="#catPrincipales" class="dropdown-btn">
+                    Categorías
+                    <!-- Flecha que rota mediante CSS -->
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
 
-        <a href="#catPrincipales" class="dropdown-btn nav-link">
-            Categorías
-            <i class="fa-solid fa-chevron-down"></i>
-        </a>
-
-        <!-- Contenedor del menú desplegable -->
+                <!-- Contenedor del menú desplegable -->
                 <div class="dropdown-menu">
 
                     <a href="#">
@@ -76,15 +79,11 @@
 
                 </div>
 
-    </div>
-
-    <a href="#" class="nav-link">Ofertas</a>
-
-    <a href="#" class="nav-link">Nosotros</a>
-
-    <a href="#" class="nav-link">Contacto</a>
-
-</nav>
+            </div>
+            <a href="#">Ofertas</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Contacto</a>
+        </nav>
 
         <div class="acciones">
             <input type="text" id="buscador">

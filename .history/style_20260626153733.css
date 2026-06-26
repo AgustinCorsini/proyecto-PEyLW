@@ -547,7 +547,57 @@ body{
 
 /*
 
- 
+        <nav>
+            <!-- La clase active indica la página actual -->
+            <a href="main.html" class="active">Inicio</a>
+
+            <a href="productos.html">Productos</a>
+
+            <!-- Menú desplegable de categorías -->
+            <div class="dropdown">
+
+                <!-- Botón que despliega el menú -->
+                <a href="#catPrincipales" class="dropdown-btn">
+                    Categorías
+                    <!-- Flecha que rota mediante CSS -->
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+
+                <!-- Contenedor del menú desplegable -->
+                <div class="dropdown-menu">
+
+                    <a href="#">
+                        <img src="./iconos/headset-svgrepo-com.svg" alt="">
+                        Auriculares
+                    </a>
+
+                    <a href="#">
+                        <img src="./iconos/keyboard-svgrepo-com.svg" alt="">
+                        Teclados
+                    </a>
+
+                    <a href="#">
+                        <img src="./iconos/mouse-gaming-svgrepo-com.svg" alt="">
+                        Mouses
+                    </a>
+
+                    <a href="#">
+                        <img src="./iconos/monitor-svgrepo-com.svg" alt="">
+                        Monitores
+                    </a>
+
+                    <a href="#">
+                        <img src="./iconos/gamepad-joystick-svgrepo-com.svg" alt="">
+                        Accesorios
+                    </a>
+
+                </div>
+
+            </div>
+            <a href="#">Ofertas</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Contacto</a>
+        </nav>
 
         
 */

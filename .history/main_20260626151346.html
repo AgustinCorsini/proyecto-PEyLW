@@ -33,21 +33,24 @@
 
         </div>
 
-<nav>
+        <nav>
+            <!-- La clase active indica la página actual -->
+            <a href="main.html" class="active" id="navA">Inicio</a>
 
-    <a href="main.html" class="nav-link active">Inicio</a>
+            <a href="productos.html" id="navA">Productos</a>
 
-    <a href="productos.html" class="nav-link">Productos</a>
+            <!-- Menú desplegable de categorías -->
+            <div class="dropdown" id="navA">
 
-    <div class="dropdown">
+                <!-- Botón que despliega el menú -->
+                <a href="#catPrincipales" class="dropdown-btn">
+                    Categorías
+                    <!-- Flecha que rota mediante CSS -->
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
 
-        <a href="#catPrincipales" class="dropdown-btn nav-link">
-            Categorías
-            <i class="fa-solid fa-chevron-down"></i>
-        </a>
-
-        <!-- Contenedor del menú desplegable -->
-                <div class="dropdown-menu">
+                <!-- Contenedor del menú desplegable -->
+                <div class="dropdown-menu" >
 
                     <a href="#">
                         <img src="./iconos/headset-svgrepo-com.svg" alt="">
@@ -76,15 +79,11 @@
 
                 </div>
 
-    </div>
-
-    <a href="#" class="nav-link">Ofertas</a>
-
-    <a href="#" class="nav-link">Nosotros</a>
-
-    <a href="#" class="nav-link">Contacto</a>
-
-</nav>
+            </div>
+            <a href="#" id="navA">Ofertas</a>
+            <a href="#" id="navA" >Nosotros</a>
+            <a href="#" id="navA">Contacto</a>
+        </nav>
 
         <div class="acciones">
             <input type="text" id="buscador">

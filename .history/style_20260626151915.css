@@ -125,25 +125,21 @@ nav a.active::after,
     background: #7b2cbf;
     border-radius: 10px;
 }
-.nav-link{
-    position:relative;
+nav a,
+.dropdown-btn{
+    position: relative;
 }
 
-.nav-link::after{
-    content:"";
-    position:absolute;
-    left:0;
-    bottom:-8px;
-    width:0;
-    height:3px;
-    background:#7b2cbf;
-    border-radius:10px;
-    transition:width .3s ease;
-}
-
-.nav-link:hover::after,
-.nav-link.active::after{
-    width:100%;
+nav a::after,
+.dropdown-btn::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0;
+    height: 3px;
+    background: #7b2cbf;
+    transition: width .3s ease;
 }
 
 nav a:hover::after,
@@ -541,13 +537,4 @@ body{
     background-color: green;
 }
     
-*/
-
-
-
-/*
-
- 
-
-        
 */
