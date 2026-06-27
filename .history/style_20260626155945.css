@@ -176,7 +176,7 @@ nav a.active::after,
 
     background:#7b2cbf;
 
-    transition:width .25s;
+    transition:width .105s;
 
 }
 

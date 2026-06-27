@@ -403,7 +403,7 @@ nav a.active::after,
     text-decoration:none;
     color:#333;
 
-    transition:.25s;
+    transition:.75s;
 
     box-shadow:0 3px 12px rgba(123,44,191,.12);
 
@@ -431,6 +431,7 @@ nav a.active::after,
 
     border:1px solid #7b2cbf;
 
+    
 }
 
 
@@ -516,18 +517,7 @@ footer{
 }
 
 
-/*--- RESPONSIVE ---*/
-@media(max-width:900px){
 
-    nav{
-        display:none;
-    }
-
-    .acciones input{
-        display:none;
-    }
-
-}
 /*
 *{
     margin: 0;

@@ -516,18 +516,7 @@ footer{
 }
 
 
-/*--- RESPONSIVE ---*/
-@media(max-width:900px){
 
-    nav{
-        display:none;
-    }
-
-    .acciones input{
-        display:none;
-    }
-
-}
 /*
 *{
     margin: 0;

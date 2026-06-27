@@ -129,23 +129,49 @@ nav a.active::after,
     position:relative;
 }
 
-.nav-link::after{
+/* Cada enlace será el contenedor de la barra */
+.nav-link{
+    position: relative;
+    padding-left: 15px; /* espacio para la barra */
+}
+
+/* Barra lateral */
+.nav-link::before{
+
     content:"";
+
     position:absolute;
+
     left:0;
-    bottom:-8px;
-    width:0;
-    height:3px;
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:4px;
+    height:0;
+
     background:#7b2cbf;
+
     border-radius:10px;
-    transition:width .3s ease;
+
+    transition:height .25s ease;
+
 }
 
-.nav-link:hover::after,
-.nav-link.active::after{
-    width:100%;
+/* Hover y página activa */
+.nav-link:hover::before,
+.nav-link.active::before{
+
+    height:70%;
+
 }
 
+.nav-link:hover,
+.nav-link.active{
+
+    color:#7b2cbf;
+
+}
 nav a:hover::after,
 .dropdown-btn:hover::after,
 nav a.active::after,

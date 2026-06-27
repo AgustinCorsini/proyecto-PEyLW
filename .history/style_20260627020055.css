@@ -431,6 +431,13 @@ nav a.active::after,
 
     border:1px solid #7b2cbf;
 
+        background:white;
+    padding:15px;
+    border-radius:10px;
+    text-align:center;
+    transition:.3s;
+    box-shadow:0 2px 10px #7a2cbf4a;
+    
 }
 
 
@@ -516,18 +523,7 @@ footer{
 }
 
 
-/*--- RESPONSIVE ---*/
-@media(max-width:900px){
 
-    nav{
-        display:none;
-    }
-
-    .acciones input{
-        display:none;
-    }
-
-}
 /*
 *{
     margin: 0;

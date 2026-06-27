@@ -154,6 +154,34 @@ nav a.active::after,
     width: 100%;
 }
 
+.nav-link::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-50;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:2px;
+
+    height:0;
+
+    background:#7b2cbf;
+
+    transition:.25s;
+
+}
+
+.nav-link:hover::before,
+.nav-link.active::before{
+
+    height:65%;
+
+}
 
 
 .dropdown-menu a{

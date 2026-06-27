@@ -182,7 +182,7 @@ nav a.active::after,
 
 .dropdown-menu a:hover::after{
 
-    width:calc(100% - 15%);
+    width:calc(100% - 25%);
 
 }
 

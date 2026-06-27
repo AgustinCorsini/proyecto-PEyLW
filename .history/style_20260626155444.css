@@ -160,32 +160,6 @@ nav a.active::after,
     position:relative;
 }
 
-.dropdown-menu a::after{
-
-    content:"";
-
-    position:absolute;
-
-    left:18px;
-
-    bottom:8px;
-
-    width:0;
-
-    height:2px;
-
-    background:#7b2cbf;
-
-    transition:width .25s;
-
-}
-
-.dropdown-menu a:hover::after{
-
-    width:calc(100% - 15%);
-
-}
-
 
 
 

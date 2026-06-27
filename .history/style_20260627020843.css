@@ -141,19 +141,34 @@ nav a.active::after,
     transition:width .3s ease;
 }
 
-.nav-link:hover::after,
-.nav-link.active::after{
-    width:100%;
+.nav-link::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:2px;
+
+    height:0;
+
+    background:#7b2cbf;
+
+    transition:.25s;
+
 }
 
-nav a:hover::after,
-.dropdown-btn:hover::after,
-nav a.active::after,
-.dropdown-btn.active::after{
+.nav-link:hover::before,
+.nav-link.active::before{
 
-    width: 100%;
+    height:165%;
+
 }
-
 
 
 .dropdown-menu a{

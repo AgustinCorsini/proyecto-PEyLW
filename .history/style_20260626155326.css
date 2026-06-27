@@ -156,36 +156,26 @@ nav a.active::after,
 
 
 
-.dropdown-menu a{
+.nav-link{
     position:relative;
 }
 
-.dropdown-menu a::after{
-
+.nav-link::after{
     content:"";
-
     position:absolute;
-
-    left:18px;
-
-    bottom:8px;
-
+    left:0;
+    bottom:-8px;
     width:0;
-
-    height:2px;
-
+    height:3px;
     background:#7b2cbf;
-
-    transition:width .25s;
-
+    border-radius:10px;
+    transition:width .3s ease;
 }
 
-.dropdown-menu a:hover::after{
-
-    width:calc(100% - 15%);
-
+.nav-link:hover::after,
+.nav-link.active::after{
+    width:100%;
 }
-
 
 
 

@@ -183,10 +183,69 @@ nav a.active::after,
 .dropdown-menu a:hover::after{
 
     width:calc(100% - 15%);
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:4px;
+    height:0;
+
+    background:#7b2cbf;
+
+    border-radius:10px;
+
+    transition:height .25s ease;
 
 }
 
+/* Cada enlace será el contenedor de la barra */
+.nav-link{
+    position: relative;
+    padding-left: 15px; /* espacio para la barra */
+}
 
+/* Barra lateral */
+.nav-link::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:4px;
+    height:0;
+
+    background:#7b2cbf;
+
+    border-radius:10px;
+
+    transition:height .25s ease;
+
+}
+
+/* Hover y página activa */
+.nav-link:hover::before,
+.nav-link.active::before{
+
+    height:70%;
+
+}
+
+.nav-link:hover,
+.nav-link.active{
+
+    color:#7b2cbf;
+
+}
 
 
 
