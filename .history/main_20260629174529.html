@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameZone Store</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+
     <!-- Iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -99,96 +99,43 @@
 
     <!-- HERO -->
     <!-- Sección principal de presentación -->
+
     <section class="hero">
 
-        <div class="slider">
+        <div class="hero-text">
+            <h1>EQUIPATE.<br>JUGÁ.<br>GANÁ.</h1>
 
-            <!-- Slide 1 -->
-            <div class="slide active">
-
-                <div class="hero-text">
-                    <h1>EQUIPATE.<br>JUGÁ.<br>GANÁ.</h1>
-
-                    <p>
-                        Todo lo que necesitás para llevar tu experiencia gamer
-                        al siguiente nivel.
-                    </p>
-
-                    <button type="button" onclick="location.href='productos.html'">
-                        Ver productos
-                    </button>
-                </div>
-
-                <div class="hero-img">
-                    <img src="equipate.Juega.Gana.png" alt="">
-                </div>
-
+            <p>
+                Todo lo que necesitás para llevar tu experiencia
+                gamer al siguiente nivel.
+            </p>
+            <button type="button" onclick="location.href='productos.html'">Ver Productos</button>
             </div>
 
+        <div class="hero-img" id="imgCarrusel">
+<div class="hero-img">
 
-            <!-- Slide 2 -->
-            <div class="slide">
+    <div class="carrusel">
 
-                <div class="hero-text">
-                    <h1>LOS MEJORES<br>PERIFÉRICOS</h1>
+        <img src="img/banner1.png" class="slide activo" alt="Banner 1">
 
-                    <p>
-                        HyperX, Logitech, Redragon, Razer,
-                        Corsair y mucho más.
-                    </p>
+        <img src="img/banner2.png" class="slide" alt="Banner 2">
 
-                    <button type="button" onclick="location.href='marcas.html'">
-                        Ver marcas
-                    </button>
-
-                </div>
-
-                <div class="hero-img">
-                    <img src="banner2.png" alt="">
-                </div>
-
-            </div>
-
-
-            <!-- Slide 3 -->
-            <div class="slide">
-
-                <div class="hero-text">
-                    <h1>OFERTAS<br>IMPERDIBLES</h1>
-
-                    <p>
-                        Encontrá descuentos exclusivos
-                        por tiempo limitado.
-                    </p>
-
-                    <button type="button">
-                        Comprar ahora
-                    </button>
-
-                </div>
-
-                <div class="hero-img">
-                    <img src="./combos/redragon S129w.webp" alt="">
-                </div>
-
-            </div>
-
-        </div>
+        <img src="img/banner3.png" class="slide" alt="Banner 3">
 
         <!-- Flechas -->
 
-        <button type="button" class="prev">&#10094;</button>
-        <button type="button" class="next">&#10095;</button>
+        <button class="flecha izquierda">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
 
-        <!-- Indicadores -->
+        <button class="flecha derecha">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
 
-        <div class="dots">
+    </div>
 
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-
-        </div>
+</div>        </div>
 
     </section>
 

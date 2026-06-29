@@ -366,17 +366,7 @@ nav a.active::after,
 
 .slide.active{
     opacity:1;
-    position:absolute;
     visibility:visible;
-}
-
-.slide-img{
-    width:45%;
-}
-
-.slide-img img{
-    width:100%;
-    display:block;
 }
 
 .hero-text{

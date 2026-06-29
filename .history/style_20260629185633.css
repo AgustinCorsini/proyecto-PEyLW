@@ -365,18 +365,11 @@ nav a.active::after,
 /* Slide visible */
 
 .slide.active{
+
     opacity:1;
-    position:absolute;
-    visibility:visible;
-}
 
-.slide-img{
-    width:45%;
-}
+    z-index:1;
 
-.slide-img img{
-    width:100%;
-    display:block;
 }
 
 .hero-text{
