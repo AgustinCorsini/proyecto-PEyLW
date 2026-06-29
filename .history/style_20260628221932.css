@@ -61,9 +61,7 @@ header{
 .menu-hamburguesa:hover{
     background:#f0f0f0;
     color:#7b2cbf;
-/*    border-color: #5e1ea5;
-    transition: left .3s ease;
-*/
+    border-color: #5e1ea5;
 }
 .menu-lateral{
     position:fixed;

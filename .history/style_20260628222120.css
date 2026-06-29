@@ -55,6 +55,8 @@ header{
     border-radius:8px;
     /* Genera una transición suave al cambiar una propiedad */
     transition:.3s;
+        border-color: #5e1ea5;
+    transition: left .3s ease;
 }
 
 /*Hover --> Se ejecuta cuando el usuario pasa el cursor sobre el elemento */

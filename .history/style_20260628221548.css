@@ -61,9 +61,6 @@ header{
 .menu-hamburguesa:hover{
     background:#f0f0f0;
     color:#7b2cbf;
-/*    border-color: #5e1ea5;
-    transition: left .3s ease;
-*/
 }
 .menu-lateral{
     position:fixed;
@@ -561,8 +558,6 @@ footer{
 
     transform:translateY(-2px);
 
-    box-shadow:0 3px 10px rgba(122, 44, 191, 0.794);
-
 }
 
 .pagina-btn.active{
@@ -575,7 +570,7 @@ footer{
 
 .pagina-btn.disabled{
 
-    opacity:.45;
+    opacity:.95;
 
     cursor:default;
 

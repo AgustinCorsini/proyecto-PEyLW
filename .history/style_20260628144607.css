@@ -61,9 +61,6 @@ header{
 .menu-hamburguesa:hover{
     background:#f0f0f0;
     color:#7b2cbf;
-/*    border-color: #5e1ea5;
-    transition: left .3s ease;
-*/
 }
 .menu-lateral{
     position:fixed;
@@ -431,6 +428,8 @@ nav a.active::after,
 
     border:1px solid #7b2cbf;
 
+    background-color: black;
+
 }
 
 
@@ -515,81 +514,6 @@ footer{
     padding:20px;
 }
 
-/*=========================
-        PAGINACIÓN
-=========================*/
-
-.paginacion{
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:12px;
-
-    margin:50px 0 20px;
-
-}
-
-.pagina-btn{
-
-    width:42px;
-    height:42px;
-
-    border:none;
-
-    border-radius:10px;
-
-    background:#fff;
-
-    color:#555;
-
-    font-weight:bold;
-
-    cursor:pointer;
-
-    transition:.25s;
-
-    box-shadow:0 3px 10px rgba(123,44,191,.12);
-
-}
-
-.pagina-btn:hover{
-
-    background:#7b2cbf;
-
-    color:#fff;
-
-    transform:translateY(-2px);
-
-    box-shadow:0 3px 10px rgba(122, 44, 191, 0.794);
-
-}
-
-.pagina-btn.active{
-
-    background:#7b2cbf;
-
-    color:#fff;
-
-}
-
-.pagina-btn.disabled{
-
-    opacity:.45;
-
-    cursor:default;
-
-}
-
-.pagina-btn.disabled:hover{
-
-    background:#fff;
-
-    color:#555;
-
-    transform:none;
-
-}
 
 /*--- RESPONSIVE ---*/
 @media(max-width:900px){

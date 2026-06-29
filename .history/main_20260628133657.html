@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+
     <!-- HEADER -->
     <header>
         <!-- Contenedor del menú hamburguesa y el logo -->
@@ -32,62 +33,63 @@
 
         </div>
 
-    <nav>
+<nav>
 
-        <a href="main.html" class="nav-link active">Inicio</a>
+    <a href="main.html" class="nav-link active">Inicio</a>
 
-        <a href="productos.html" class="nav-link">Productos</a>
+    <a href="productos.html" class="nav-link">Productos</a>
 
-        <div class="dropdown">
+    <div class="dropdown">
 
-            <a href="#catPrincipales" class="dropdown-btn nav-link">
-                Categorías
-                <i class="fa-solid fa-chevron-down"></i>
-            </a>
+        <a href="#catPrincipales" class="dropdown-btn nav-link">
+            Categorías
+            <i class="fa-solid fa-chevron-down"></i>
+        </a>
 
-            <!-- Contenedor del menú desplegable -->
-                    <div class="dropdown-menu">
+        <!-- Contenedor del menú desplegable -->
+                <div class="dropdown-menu">
 
-                        <a href="#">
-                            <img src="./iconos/headset-svgrepo-com.svg" alt="">
-                            Auriculares
-                        </a>
+                    <a href="#">
+                        <img src="./iconos/headset-svgrepo-com.svg" alt="">
+                        Auriculares
+                    </a>
 
-                        <a href="#">
-                            <img src="./iconos/keyboard-svgrepo-com.svg" alt="">
-                            Teclados
-                        </a>
+                    <a href="#">
+                        <img src="./iconos/keyboard-svgrepo-com.svg" alt="">
+                        Teclados
+                    </a>
 
-                        <a href="#">
-                            <img src="./iconos/mouse-gaming-svgrepo-com.svg" alt="">
-                            Mouses
-                        </a>
+                    <a href="#">
+                        <img src="./iconos/mouse-gaming-svgrepo-com.svg" alt="">
+                        Mouses
+                    </a>
 
-                        <a href="#">
-                            <img src="./iconos/monitor-svgrepo-com.svg" alt="">
-                            Monitores
-                        </a>
+                    <a href="#">
+                        <img src="./iconos/monitor-svgrepo-com.svg" alt="">
+                        Monitores
+                    </a>
 
-                        <a href="#">
-                            <img src="./iconos/gamepad-joystick-svgrepo-com.svg" alt="">
-                            Accesorios
-                        </a>
+                    <a href="#">
+                        <img src="./iconos/gamepad-joystick-svgrepo-com.svg" alt="">
+                        Accesorios
+                    </a>
 
-                    </div>
+                </div>
 
-        </div>
+    </div>
 
-        <a href="#" class="nav-link">Ofertas</a>
+    <a href="#" class="nav-link">Ofertas</a>
 
-        <a href="#" class="nav-link">Nosotros</a>
+    <a href="#" class="nav-link">Nosotros</a>
 
-        <a href="#" class="nav-link">Contacto</a>
+    <a href="#" class="nav-link">Contacto</a>
 
-    </nav>
+</nav>
 
         <div class="acciones">
             <input type="text" id="buscador">
             <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-regular fa-user"></i>
             <i class="fa-solid fa-cart-shopping"></i>
         </div>
 
@@ -142,11 +144,6 @@
             </a>
 
             <a href="#" class="categoria">
-                <img src="./iconos/office-chair-chair-svgrepo-com.svg" alt="Silla">
-                <span>Sillas</span>
-            </a>
-
-            <a href="#" class="categoria">
                 <img src="./iconos/gamepad-joystick-svgrepo-com.svg" alt="Accesorios">
                 <span>Accesorios</span>
             </a>
@@ -171,7 +168,7 @@ para agregar productos al carrito y almacenarlos en Local Storage.
 
             <div class="card">
                 <img src="./auris/HXC2.webp" alt="">
-                <h3>Auricular HyperX Cloud II</h3>
+                <h3>Auriculares HyperX Cloud II</h3>
                 <span>$89.999</span>
                 <button type="button"
                     class="btn-agregar"
@@ -184,7 +181,7 @@ para agregar productos al carrito y almacenarlos en Local Storage.
 
             <div class="card">
                 <img src="./teclados/tecladok552.webp" alt="">
-                <h3>Teclado Redragon K552</h3>
+                <h3>Redragon K552</h3>
                 <span>$59.999</span>
                 <button type="button"
                     class="btn-agregar"
@@ -211,14 +208,14 @@ para agregar productos al carrito y almacenarlos en Local Storage.
 
             <div class="card">
                 <img src="./mouses/g502.webp" alt="">
-                <h3>Mouse Logitech G502</h3>
-                <span>$82.999</span>
+                <h3>Logitech G502</h3>
+                <span>$69.999</span>
 
                 <button type="button"
                     class="btn-agregar"
                     data-id="4"
                     data-nombre="Logitech G502"
-                    data-precio="82999">
+                    data-precio="69999">
                     Agregar
                 </button>
             </div>
@@ -253,7 +250,7 @@ para agregar productos al carrito y almacenarlos en Local Storage.
 
             <div class="card">
                 <img src="./auris/HXCS2.webp" alt="">
-                <h3>Auricular Hyperx Cloud Stinger II</h3>
+                <h3>Hyperx Cloud Stinger II</h3>
                 <span>$104.999</span>
 
                 <button type="button"
@@ -293,19 +290,6 @@ para agregar productos al carrito y almacenarlos en Local Storage.
                 </button>
             </div>
 
-            <div class="card">
-                <img src="./monitores/monitor Asus.webp" alt="">
-                <h3>Monitor Asus Tuf VG34VQL3A con pantalla de 34" 180Hz</h3>
-                <span>$866.500</span>
-
-                <button type="button"
-                    class="btn-agregar"
-                    data-id="10"
-                    data-nombre="Monitor Asus VG34VQL3A"
-                    data-precio="866500">
-                    Agregar
-                </button>
-            </div>
 
             <div class="card">
                 <img src="./accesorios/DualSense ps5.webp" alt="">
@@ -314,7 +298,7 @@ para agregar productos al carrito y almacenarlos en Local Storage.
 
                 <button type="button"
                     class="btn-agregar"
-                    data-id="11"
+                    data-id="10"
                     data-nombre="Joystick Sony PS5"
                     data-precio="174999">
                     Agregar
@@ -328,7 +312,7 @@ para agregar productos al carrito y almacenarlos en Local Storage.
 
                 <button type="button"
                     class="btn-agregar"
-                    data-id="12"
+                    data-id="11"
                     data-nombre="Mouse Redragon M916-pro"
                     data-precio="69999">
                     Agregar
@@ -342,7 +326,7 @@ para agregar productos al carrito y almacenarlos en Local Storage.
 
                 <button type="button"
                     class="btn-agregar"
-                    data-id="13"
+                    data-id="12"
                     data-nombre="Teclado Logitech G715"
                     data-precio="299999">
                     Agregar
@@ -356,9 +340,23 @@ para agregar productos al carrito y almacenarlos en Local Storage.
 
                 <button type="button"
                     class="btn-agregar"
-                    data-id="14"
+                    data-id="13"
                     data-nombre="Mousepad Logitech G840"
                     data-precio="142000">
+                    Agregar
+                </button>
+            </div>
+
+            <div class="card">
+                <img src="./monitores/monitor Asus.webp" alt="">
+                <h3>Monitor Asus Tuf VG34VQL3A con pantalla de 34" 180Hz</h3>
+                <span>$866.500</span>
+
+                <button type="button"
+                    class="btn-agregar"
+                    data-id="14"
+                    data-nombre="Monitor Asus VG34VQL3A"
+                    data-precio="866500">
                     Agregar
                 </button>
             </div>
@@ -392,8 +390,8 @@ para agregar productos al carrito y almacenarlos en Local Storage.
             </div>
 
             <div class="card">
-                <img src="./teclados/teclado strike me.webp" alt="">
-                <h3>Teclado Mecánico Xtrike-Me Gk-916 60%</h3>
+                <img src="./accesorios/mousepad RD.webp" alt="">
+                <h3>Teclado Mecánico Xtrike Me Gk-916 60%</h3>
                 <span>$32.999</span>
 
                 <button type="button"
@@ -404,275 +402,6 @@ para agregar productos al carrito y almacenarlos en Local Storage.
                     Agregar
                 </button>
             </div>
-
-            <div class="card">
-                <img src="./monitores/monitor Gadnic.webp" alt="">
-                <h3>Monitor Led Gadnic 24" Full HD 100Hz</h3>
-                <span>$300.000</span>
-
-                <button type="button"
-                    class="btn-agregar"
-                    data-id="18"
-                    data-nombre="Monitor Gadnic"
-                    data-precio="300000">
-                    Agregar
-                </button>
-            </div>
-
-            <div class="card">
-                <img src="./mouses/mouse vertical.webp" alt="">
-                <h3>Mouse Gamer Zelotes Vertical</h3>
-                <span>$35.000</span>
-
-                <button type="button"
-                    class="btn-agregar"
-                    data-id="19"
-                    data-nombre="Mouse Vertical"
-                    data-precio="35000">
-                    Agregar
-                </button>
-            </div>
-
-            <div class="card">
-                <img src="./accesorios/mousepad Omaigat t015.webp" alt="">
-                <h3>Mousepad Omaigat t015 60cm x 117cm x 3mm</h3>
-                <span>$59.990</span>
-
-                <button type="button"
-                    class="btn-agregar"
-                    data-id="20"
-                    data-nombre="Mousepad t015"
-                    data-precio="59990">
-                    Agregar
-                </button>
-            </div>
-
-            <div class="card">
-                <img src="./accesorios/microfono HyperX Quadcast 2S.webp" alt="">
-                <h3>Microfono HyperX Quadcast 2 S</h3>
-                <span>$490.990</span>
-
-                <button type="button"
-                    class="btn-agregar"
-                    data-id="21"
-                    data-nombre="Microfono HyperX Quadcast"
-                    data-precio="490990">
-                    Agregar
-                </button>
-            </div>
-
-            <div class="card">
-                <img src="./accesorios/microfono Redragon GM305.webp" alt="">
-                <h3>Microfono Redragon GM305</h3>
-                <span>$140.900</span>
-
-                <button type="button"
-                    class="btn-agregar"
-                    data-id="22"
-                    data-nombre="Microfono Redragon GM305"
-                    data-precio="140900">
-                    Agregar
-                </button>
-            </div>
-
-            <div class="card">
-                <img src="./auris/Xtrike Me Gh-512w.webp" alt="">
-                <h3>Auriculares Xtrike Me Gh-512w</h3>
-                <span>$58.999</span>
-
-                <button type="button"
-                    class="btn-agregar"
-                    data-id="23"
-                    data-nombre="Xtrike Me Gh-512w"
-                    data-precio="58999">
-                    Agregar
-                </button>
-            </div>
-
-            <div class="card">
-                <img src="./teclados/teclado Havit Kb922l.webp" alt="">
-                <h3>Teclado Magnético Havit Kb922l Pro-SP 65%</h3>
-                <span>$66.590</span>
-
-                <button type="button"
-                    class="btn-agregar"
-                    data-id="24"
-                    data-nombre="Havit Kb922l Pro-SP"
-                    data-precio="66590">
-                    Agregar
-                </button>
-            </div>
-
-            <div class="card">
-                <img src="./mouses/mouse Mchose K7 Ultra.webp" alt="">
-                <h3>Mouse Gamer Inalámbrico Mchose K7 Ultra</h3>
-                <span>$189.050</span>
-
-                <button type="button"
-                    class="btn-agregar"
-                    data-id="25"
-                    data-nombre="Mouse Mchose K7 "
-                    data-precio="189050">
-                    Agregar
-                </button>
-            </div>
-
-            <div class="card">
-                <img src="./monitores/monitor Solarmax Sx24c7.webp" alt="">
-                <h3>Monitor Solarmax Sx24c7 24" Curvo Hdmi Vga Hdr 100hz</h3>
-                <span>$281.600</span>
-
-                <button type="button"
-                    class="btn-agregar"
-                    data-id="26"
-                    data-nombre="Monitor Solarmax Sx24c7 "
-                    data-precio="281600">
-                    Agregar
-                </button>
-            </div>
-
-            <div class="card">
-                <img src="./monitores/monitor Odyssey G3 G30d.webp" alt="">
-                <h3>Monitor 24" Odyssey G3 G30d Fhd 180hz</h3>
-                <span>$379.999</span>
-
-                <button type="button"
-                    class="btn-agregar"
-                    data-id="27"
-                    data-nombre="Monitor Odyssey G3 G30d"
-                    data-precio="379999">
-                    Agregar
-                </button>
-            </div>
-
-            <div class="card">
-                <img src="./sillas/silla corsair t3.webp" alt="">
-                <h3>Silla Gamer Corsair T3 Rush</h3>
-                <span>$789.990</span>
-
-                <button type="button"
-                    class="btn-agregar"
-                    data-id="28"
-                    data-nombre="Silla Corsar T3"
-                    data-precio="789990">
-                    Agregar
-                </button>
-            </div>
-
-            <div class="card">
-                <img src="./mouses/mouse Redragon M916-PRO-4K.webp" alt="">
-                <h3>Mouse Gamer Redragon King Pro M916</h3>
-                <span>$77.499</span>
-
-                <button type="button"
-                    class="btn-agregar"
-                    data-id="29"
-                    data-nombre="Mouse Redragon King Pro M916"
-                    data-precio="77499">
-                    Agregar
-                </button>
-            </div>
-
-            <div class="card">
-                <img src="./teclados/teclado Redragon K673RGB-PRO SP.webp" alt="">
-                <h3>Teclado Gamer Redragon K673rgb Sp</h3>
-                <span>$99.999</span>
-
-                <button type="button"
-                    class="btn-agregar"
-                    data-id="30"
-                    data-nombre="Teclado Redragon K673 SP"
-                    data-precio="99999">
-                    Agregar
-                </button>
-            </div>
-
-            <div class="card">
-                <img src="./sillas/silla Corsair TC500.webp" alt="">
-                <h3>Silla Corsair TC500 Luxe</h3>
-                <span>$2.385.000</span>
-
-                <button type="button"
-                    class="btn-agregar"
-                    data-id="31"
-                    data-nombre="Silla Corsair TC500"
-                    data-precio="3585000">
-                    Agregar
-                </button>
-            </div>
-
-            <div class="card">
-                <img src="./sillas/silla Corsair TC100.webp" alt="">
-                <h3>Silla Corsair TC100 </h3>
-                <span>$649.449</span>
-
-                <button type="button"
-                    class="btn-agregar"
-                    data-id="32"
-                    data-nombre="Silla Corsair TC100"
-                    data-precio="649449">
-                    Agregar
-                </button>
-            </div>
-
-            <div class="card">
-                <img src="./auris/Redragon Hylas H260.webp" alt="">
-                <h3>Auricular Redragon Alámbrico Hylas H260 Rgb</h3>
-                <span>$41100</span>
-
-                <button type="button"
-                    class="btn-agregar"
-                    data-id="33"
-                    data-nombre="Redragon Hylas H260"
-                    data-precio="41100">
-                    Agregar
-                </button>
-            </div>
-
-            <div class="card">
-                <img src="./accesorios/HarrowPro.webp" alt="">
-                <h3>Joystick Redragon Harrow Pro Wireless G808pro</h3>
-                <span>$69.990</span>
-
-                <button type="button"
-                    class="btn-agregar"
-                    data-id="34"
-                    data-nombre="Redragon Harrow Pro"
-                    data-precio="69990">
-                    Agregar
-                </button>
-            </div>
-
-            <div class="card">
-                <img src="./auris/Logitech G432.webp" alt="">
-                <h3>Auricular Logitech G432</h3>
-                <span>$99.990</span>
-
-                <button type="button"
-                    class="btn-agregar"
-                    data-id="35"
-                    data-nombre="Logitech G432"
-                    data-precio="99990">
-                    Agregar
-                </button>
-            </div>
-
-        </div>
-
-        <!-- Paginación -->
-        <div class="paginacion">
-
-            <button type="button" class="pagina-btn disabled" aria-label="Página anterior">
-                <i class="fa-solid fa-chevron-left"></i>
-            </button>
-
-            <button type="button" class="pagina-btn active">1</button>
-            <button type="button" class="pagina-btn">2</button>
-            <button type="button" class="pagina-btn">3</button>
-
-            <button type="button" class="pagina-btn" aria-label="Página siguiente">
-                <i class="fa-solid fa-chevron-right"></i>
-            </button>
 
         </div>
         <br>

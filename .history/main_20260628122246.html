@@ -1,23 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>GameZone Store</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- Iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+
     <!-- HEADER -->
     <header>
-
+        <!-- Contenedor del menú hamburguesa y el logo -->
         <div class="header-izquierda">
 
+            <!-- Botón que más adelante abrirá el menú lateral con JavaScript -->
             <button type="button" class="menu-hamburguesa" aria-label="Abrir menú">
+
+                <!-- Icono obtenido desde Font Awesome -->
                 <i class="fa-solid fa-bars" aria-hidden="true"></i>
+
             </button>
 
+            <!-- Logo que redirige al inicio -->
             <div class="logo">
                 <a href="main.html">
                     <img src="logo.png" alt="GameZone Store">
@@ -26,16 +33,20 @@
 
         </div>
 
-        <nav>
-            <a href="main.html">Inicio</a>
-            <a href="productos.html" class="active">Productos</a>
-            <div class="dropdown">
+<nav>
 
-                <a href="main.html" class="dropdown-btn">
-                    Categorías
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
+    <a href="main.html" class="nav-link active">Inicio</a>
 
+    <a href="productos.html" class="nav-link">Productos</a>
+
+    <div class="dropdown">
+
+        <a href="#catPrincipales" class="dropdown-btn nav-link">
+            Categorías
+            <i class="fa-solid fa-chevron-down"></i>
+        </a>
+
+        <!-- Contenedor del menú desplegable -->
                 <div class="dropdown-menu">
 
                     <a href="#">
@@ -65,11 +76,15 @@
 
                 </div>
 
-            </div>
-            <a href="#">Ofertas</a>
-            <a href="#">Nosotros</a>
-            <a href="#">Contacto</a>
-        </nav>
+    </div>
+
+    <a href="#" class="nav-link">Ofertas</a>
+
+    <a href="#" class="nav-link">Nosotros</a>
+
+    <a href="#" class="nav-link">Contacto</a>
+
+</nav>
 
         <div class="acciones">
             <input type="text" id="buscador">
@@ -80,12 +95,75 @@
 
     </header>
 
+    <!-- HERO -->
+    <!-- Sección principal de presentación -->
 
+    <section class="hero">
 
-        <!-- PRODUCTOS -->
-    <section class="productos">
+        <div class="hero-text">
+            <h1>EQUIPATE.<br>JUGÁ.<br>GANÁ.</h1>
 
-        <h2>Nuestros Productos</h2>
+            <p>
+                Todo lo que necesitás para llevar tu experiencia
+                gamer al siguiente nivel.
+            </p>
+            <button type="button" onclick="location.href='productos.html'">Ver Productos</button>
+            </div>
+
+        <div class="hero-img" id="imgCarrusel">
+            <img src="equipate.Juega.Gana.png" alt="Setup Gamer">
+        </div>
+
+    </section>
+
+    <!-- CATEGORIAS -->
+    <section class="categorias">
+        <!-- id utilizado como ancla para desplazarse desde el navbar -->
+        <h2 id="catPrincipales">Categorías principales</h2>
+
+        <div class="contenedor-categorias">
+
+            <a href="#" class="categoria">
+                <img src="./iconos/headset-svgrepo-com.svg" alt="Auriculares">
+                <span>Auriculares</span>
+            </a>
+
+            <a href="#" class="categoria">
+                <img src="./iconos/keyboard-svgrepo-com.svg" alt="Teclados">
+                <span>Teclados</span>
+            </a>
+
+            <a href="#" class="categoria">
+                <img src="./iconos/mouse-gaming-svgrepo-com.svg" alt="Mouses">
+                <span>Mouses</span>
+            </a>
+
+            <a href="#" class="categoria">
+                <img src="./iconos/monitor-svgrepo-com.svg" alt="Monitores">
+                <span>Monitores</span>
+            </a>
+
+            <a href="#" class="categoria">
+                <img src="./iconos/gamepad-joystick-svgrepo-com.svg" alt="Accesorios">
+                <span>Accesorios</span>
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- PRODUCTOS -->
+<!--
+Cada botón posee atributos data-* que almacenan información
+personalizada (id, nombre y precio).
+
+Estos atributos serán utilizados posteriormente desde JavaScript
+para agregar productos al carrito y almacenarlos en Local Storage.
+-->
+    <section class="productos" id="productos">
+
+        <h2>Productos Destacados</h2>
+
         <div class="grid-productos">
 
             <div class="card">
@@ -213,6 +291,20 @@
             </div>
 
             <div class="card">
+                <img src="./accesorios/mousepadRGB.webp" alt="">
+                <h3>Mousepad RGB 80x30 Cm Táctil Antideslizante Gamer</h3>
+                <span>$69.999</span>
+
+                <button type="button"
+                    class="btn-agregar"
+                    data-id="9"
+                    data-nombre="Mouse Redragon M916-pro"
+                    data-precio="69999">
+                    Agregar
+                </button>
+            </div>
+
+            <div class="card">
                 <img src="./teclados/Logitech G715.webp" alt="">
                 <h3>Teclado Gamer Logitech G715</h3>
                 <span>$229.999</span>
@@ -227,13 +319,67 @@
             </div>
 
         </div>
+        <br>
+        <div>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="contador-carrito">0</span>
+            <section id="carrito">
+                <h2>Mi carrito</h2>
 
+                <div id="items-carrito"></div>
+
+                <h3>Total: $<span id="total">0</span></h3>
+            </section>
+        </div>
     </section>
 
-        <!-- FOOTER -->
+    <!-- FOOTER -->
     <footer>
         <p>© 2026 GameZone Store</p>
     </footer>
 
 </body>
 </html>
+<!--
+<div id="contentItemsCarrusel">
+        <div class="itemCarrusel" id="item1">
+            <div class="tarjetaCarrusel" id="tarjeta1">
+                A
+            </div>
+            <div class="flechasCarrusel">
+                <a href="#item3">
+                    <i>I</i>
+                </a>
+                <a href="#item2">
+                    <i>D</i>
+                </a>
+            </div>
+        </div>
+        <div class="itemCarrusel" id="item2">
+            <div class="tarjetaCarrusel" id="tarjeta2">
+                B
+            </div>
+            <div class="flechasCarrusel">
+                <a href="#item1">
+                    <i>I</i>
+                </a>
+                <a href="#item3">
+                    <i>D</i>
+                </a>
+            </div>
+        </div>
+        <div class="itemCarrusel" id="item3">
+            <div class="tarjetaCarrusel" id="tarjeta3">
+                C
+            </div>
+            <div class="flechasCarrusel">
+                <a href="#item2">
+                    <i>I</i>
+                </a>
+                <a href="#item1">
+                    <i>D</i>
+                </a>
+            </div>
+        </div>
+    </div>
+-->
