@@ -716,55 +716,58 @@ footer{
     line-height:1.5;
 
 }
-/*=========================
-        MARCAS
-=========================*/
 
-.marcas{
-    width:90%;
-    margin:40px auto 60px;
+/* ==========================================================================
+   SECCIÓN MARCAS - ESTILOS MODO CLARO
+   ========================================================================== */
+
+/* Contenedor principal en Modo Claro */
+main.marcas {
+    background-color: #fdfdfd; /* Fondo general de la página claro */
+    color: #333333; /* Texto principal oscuro para buen contraste */
+    font-family: sans-serif;
+    padding-bottom: 60px;
 }
 
-/* Banner superior */
-
-.banner-marcas{
-    background:white;
-    padding:50px;
-    text-align:center;
-    border-radius:15px;
-    box-shadow:0 2px 10px #7a2cbf4a;
-    margin-bottom:45px;
+/* Tu etiqueta de presentación (Estilo Hero) */
+.banner-marcas {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    text-align: center;
+    background-color: #ffffff; /* Fondo blanco para la tarjeta */
+    border: 2px solid #8a2be2; /* Mantiene tu borde violeta */
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(138, 43, 226, 0.15); /* Sombra violeta suave */
 }
 
-.banner-marcas h1{
-    font-size:2.6rem;
-    color:#7b2cbf;
-    margin-bottom:15px;
+.banner-marcas h1 {
+    color: #8a2be2; /* Letras violetas en el título */
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.banner-marcas p{
-    max-width:750px;
-    margin:auto;
-    color:#555;
-    line-height:1.7;
+.banner-marcas p {
+    color: #000000; /* Letras negras en el texto como solicitaste */
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
-/* ==========================================================
-   NUEVO: Carrusel de logos infinitos (Modo Claro Integrado)
-   ========================================================== */
-
+/* --- ESTRUCTURA DEL CARRUSEL DE LOGOS (MODO CLARO) --- */
 .carrusel-marcas {
     overflow: hidden;
     width: 100%;
-    background: #fdfdfd; /* Fondo claro sutil */
-    border-radius: 15px;
+    background-color: #f8f9fa; /* Fondo gris ultra claro para diferenciar la sección */
     padding: 25px 0;
-    margin-bottom: 55px;
+    margin-bottom: 50px;
     position: relative;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.02); /* Efecto de profundidad suave */
+    border-top: 1px solid #e9ecef;
+    border-bottom: 1px solid #e9ecef;
 }
 
-/* Desvanecido elegante en los bordes izquierdo y derecho */
+/* Difuminado elegante en los bordes para fondos claros */
 .carrusel-marcas::before,
 .carrusel-marcas::after {
     content: "";
@@ -774,20 +777,20 @@ footer{
     z-index: 2;
     pointer-events: none;
 }
-.carrusel-marcas::before { top: 0; left: 0; background: linear-gradient(to right, #fdfdfd, transparent); }
-.carrusel-marcas::after { top: 0; right: 0; background: linear-gradient(to left, #fdfdfd, transparent); }
+.carrusel-marcas::before { top: 0; left: 0; background: linear-gradient(to right, #f8f9fa, transparent); }
+.carrusel-marcas::after { top: 0; right: 0; background: linear-gradient(to left, #f8f9fa, transparent); }
 
-/* Riel interno que mueve las 16 imágenes (8x2) */
+/* Riel de movimiento continuo */
 .carrusel-track {
     display: flex;
     width: calc(180px * 16); 
-    animation: desplazarCarrusel 25s linear infinite; /* Movimiento fluido y elegante */
+    animation: desplazarCarrusel 20s linear infinite;
 }
 
-/* Caja de cada logo del carrusel */
+/* Contenedor individual de cada logo en el carrusel */
 .carrusel-logo {
     width: 180px;
-    height: 70px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -796,76 +799,74 @@ footer{
 }
 
 .carrusel-logo img {
-    width: 130px;
-    height: 60px;
+    max-width: 100%;
+    max-height: 45px;
     object-fit: contain;
-    filter: grayscale(100%) opacity(0.5); /* Filtro gris suave para el modo claro */
-    transition: .3s;
+    filter: grayscale(100%) opacity(0.6); /* Logos atenuados en gris para no saturar visualmente */
+    transition: all 0.3s ease;
 }
 
-/* Eventos del mouse para el carrusel */
+/* Interacciones con el mouse */
 .carrusel-marcas:hover .carrusel-track {
-    animation-play-state: paused; /* Se frena para permitir clicks */
+    animation-play-state: paused;
 }
 
 .carrusel-logo:hover img {
-    filter: grayscale(0%) opacity(1); /* Recupera color e intensidad */
-    transform: scale(1.08); /* Crece sutilmente */
+    filter: grayscale(0%) opacity(1); /* Recupera su color original completo */
+    transform: scale(1.1);
 }
 
-/* Animación exacta calculada para tus 8 elementos duplicados */
+/* Animación del movimiento CSS */
 @keyframes desplazarCarrusel {
     0% { transform: translateX(0); }
     100% { transform: translateX(calc(-180px * 8)); }
 }
 
-/* ========================================================== */
-
-/* Grid de marcas */
-
-.grid-marcas{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-    gap:30px;
+/* --- ESTILOS DE LA GRILLA DETALLADA (MODO CLARO) --- */
+.grid-marcas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-/* Tarjeta */
-
-.marca{
-    background:white;
-    border-radius:15px;
-    padding:35px 25px;
-    text-align:center;
-    transition:.3s;
-    box-shadow:0 3px 12px rgba(123,44,191,.12);
+/* Tarjeta individual de marca */
+.marca {
+    background-color: #ffffff; /* Fondo blanco puro */
+    border: 1px solid #e2e8f0; /* Borde gris muy suave */
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); /* Sombra muy sutil de base */
+    transition: all 0.3s ease;
 }
 
-.marca:hover{
-    transform:translateY(-8px);
-    box-shadow:0 0 15px rgba(138, 43, 226, 0.5);
+.marca img {
+    height: 60px;
+    max-width: 100%;
+    object-fit: contain;
+    margin-bottom: 20px;
 }
 
-/* Logo */
-
-.marca img{
-    width:140px;
-    height:70px;
-    object-fit:contain;
-    margin-bottom:25px;
+.marca h3 {
+    color: #1a202c; /* Título de tarjeta oscuro */
+    font-size: 1.3rem;
+    margin-bottom: 10px;
 }
 
-/* Nombre */
-
-.marca h3{
-    margin-bottom:12px;
-    color:#333;
+.marca p {
+    color: #4a5568; /* Texto descriptivo gris oscuro para lectura cómoda */
+    font-size: 0.95rem;
+    line-height: 1.5;
 }
 
-/* Descripción */
-
-.marca p{
-    color:#666666;
-    line-height:1.5;
+/* Efecto hover interactivo adaptado al modo claro */
+.marca:hover {
+    border-color: #8a2be2; /* Borde se vuelve violeta */
+    transform: translateY(-5px); /* Elevación sutil */
+    box-shadow: 0 10px 20px rgba(138, 43, 226, 0.12); /* Resplandor violeta suave de fondo */
 }
 
 

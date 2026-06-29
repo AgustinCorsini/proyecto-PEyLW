@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZone Store</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <!-- Contenedor del menú hamburguesa y el logo -->
+        <div class="header-izquierda">
+
+            <!-- Botón que más adelante abrirá el menú lateral con JavaScript -->
+            <button type="button" class="menu-hamburguesa" aria-label="Abrir menú">
+
+                <!-- Icono obtenido desde Font Awesome -->
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+
+            </button>
+
+            <!-- Logo que redirige al inicio -->
+            <div class="logo">
+                <a href="main.html">
+                    <img src="logo.png" alt="GameZone Store">
+                </a>
+            </div>
+
+        </div>
+
+    <nav>
+
+        <a href="main.html" class="nav-link">Inicio</a>
+
+        <a href="productos.html" class="nav-link">Productos</a>
+
+        <div class="dropdown">
+
+            <a href="#catPrincipales" class="dropdown-btn nav-link">
+                Categorías
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+
+            <!-- Contenedor del menú desplegable -->
+            <div class="dropdown-menu">
+
+                <a href="/pagsProductos/auriculares.html">
+                    <img src="./iconos/headset-svgrepo-com.svg" alt="">
+                    Auriculares
+                </a>
+
+                <a href="/pagsProductos/teclados.html">
+                    <img src="./iconos/keyboard-svgrepo-com.svg" alt="">
+                    Teclados
+                </a>
+
+                <a href="/pagsProductos/mouses.html">
+                    <img src="./iconos/mouse-gaming-svgrepo-com.svg" alt="">
+                    Mouses
+                </a>
+
+                <a href="/pagsProductos/monitores.html">
+                    <img src="./iconos/monitor-svgrepo-com.svg" alt="">
+                    Monitores
+                </a>
+
+                <a href="/pagsProductos/sillas.html">
+                    <img src="./iconos/office-chair-chair-svgrepo-com.svg" alt="Silla">
+                    Sillas
+                </a>
+
+                <a href="/pagsProductos/accesorios.html">
+                    <img src="./iconos/gamepad-joystick-svgrepo-com.svg" alt="">
+                    Accesorios
+                </a>
+
+            </div>
+
+        </div>
+
+        <a href="#" class="nav-link">Ofertas</a>
+
+        <a href="#" class="nav-link active">Marcas</a>
+
+
+    </nav>
+
+        <div class="acciones">
+            <input type="text" id="buscador">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+
+    </header>
+
+    <!-- CONTENIDO -->
+<main class="marcas">
+
+    <section class="banner-marcas">
+        <h1>Nuestras Marcas</h1>
+
+        <p>
+            Trabajamos con las principales marcas del mundo gamer para
+            ofrecer productos originales, con garantía y la mejor calidad.
+        </p>
+    </section>
+
+
+    <section class="grid-marcas">
+
+        <div class="marca">
+            <img src="./logos/logitech.webp" alt="Logitech">
+            <h3>Logitech G</h3>
+            <p>Periféricos de alto rendimiento para gaming y eSports.</p>
+        </div>
+
+        <div class="marca">
+            <img src="./logos/hyperx.svg" alt="HyperX">
+            <h3>HyperX</h3>
+            <p>Auriculares, teclados y accesorios profesionales.</p>
+        </div>
+
+        <div class="marca">
+            <img src="./logos/redragon.jpg" alt="Redragon">
+            <h3>Redragon</h3>
+            <p>Excelente relación precio/calidad para gamers.</p>
+        </div>
+
+        <div class="marca">
+            <img src="./logos-marcas/razer.png" alt="Razer">
+            <h3>Razer</h3>
+            <p>Productos premium con iluminación RGB Chroma.</p>
+        </div>
+
+        <div class="marca">
+            <img src="./logos/corsair.jpg" alt="Corsair">
+            <h3>Corsair</h3>
+            <p>Componentes, memorias y periféricos de alta gama.</p>
+        </div>
+
+        <div class="marca">
+            <img src="./logos/Havit.webp" alt="Havit">
+            <h3>Havit</h3>
+            <p>Excelente relación precio/calidad para gamers.</p>
+        </div>
+
+        <div class="marca">
+            <img src=".//logos/xiaomi.svg" alt="Xiaomi">
+            <h3>Xiaomi</h3>
+            <p>
+                una de las opciones con mejor relación calidad-precio en el mercado gamer, ofreciendo tecnologías de gama alta 
+                a precios muy competitivos.
+            </p>
+        </div>
+
+        <div class="marca">
+            <img src="./logos-marcas/steelseries.png" alt="SteelSeries">
+            <h3>SteelSeries</h3>
+            <p>Periféricos utilizados por jugadores profesionales.</p>
+        </div>
+
+    </section>
+
+</main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 GameZone Store</p>
+    </footer>
+
+</body>
+</html>
