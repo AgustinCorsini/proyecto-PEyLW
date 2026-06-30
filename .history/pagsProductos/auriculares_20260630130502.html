@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZone Store</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js"></script>
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <!-- Contenedor del menú hamburguesa y el logo -->
+        <div class="header-izquierda">
+
+            <!-- Botón que más adelante abrirá el menú lateral con JavaScript -->
+            <button type="button" class="menu-hamburguesa" aria-label="Abrir menú">
+
+                <!-- Icono obtenido desde Font Awesome -->
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+
+            </button>
+
+            <!-- Logo que redirige al inicio -->
+            <div class="logo">
+                <a href="../main.html">
+                    <img src="../logo.png" alt="GameZone Store">
+                </a>
+            </div>
+
+        </div>
+
+    <nav>
+
+        <a href="../main.html" class="nav-link">Inicio</a>
+
+        <a href="../productos.html" class="nav-link">Productos</a>
+
+        <div class="dropdown">
+
+            <a href="../main.html" class="dropdown-btn nav-link active">
+                Categorías
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+
+            <!-- Contenedor del menú desplegable -->
+<div class="dropdown-menu">
+
+                <a href="/pagsProductos/auriculares.html">
+                    <img src="../iconos/headset-svgrepo-com.svg" alt="">
+                    Auriculares
+                </a>
+
+                <a href="/pagsProductos/teclados.html">
+                    <img src="../iconos/keyboard-svgrepo-com.svg" alt="">
+                    Teclados
+                </a>
+
+                <a href="/pagsProductos/mouses.html">
+                    <img src="../iconos/mouse-gaming-svgrepo-com.svg" alt="">
+                    Mouses
+                </a>
+
+                <a href="/pagsProductos/monitores.html">
+                    <img src="../iconos/monitor-svgrepo-com.svg" alt="">
+                    Monitores
+                </a>
+
+                <a href="/pagsProductos/sillas.html">
+                    <img src="../iconos/office-chair-chair-svgrepo-com.svg" alt="Silla">
+                    Sillas
+                </a>
+
+                <a href="/pagsProductos/accesorios.html">
+                    <img src="../iconos/gamepad-joystick-svgrepo-com.svg" alt="">
+                    Accesorios
+                </a>
+
+            </div>
+
+
+        </div>
+
+        <a href="../ofertas.html" class="nav-link">Ofertas</a>
+
+        <a href="../marcas.html" class="nav-link">Marcas</a>
+    </nav>
+
+        <div class="acciones">
+
+            <input type="text" id="buscador">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="icono-carrito" id="btnCarrito">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <span id="contador-carrito">0</span>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- PRODUCTOS -->
+    <!--
+    Cada botón posee atributos data-* que almacenan información
+    personalizada (id, nombre y precio).
+
+    Estos atributos serán utilizados posteriormente desde JavaScript
+    para agregar productos al carrito y almacenarlos en Local Storage.
+    -->
+    <section class="productos" id="productos">
+
+        <h2>Auriculares</h2>
+
+        <div class="grid-productos">
+
+            <div class="card">
+                <img src="../auris/HXC2.webp" alt="">
+                <h3>Auriculares HyperX Cloud II</h3>
+                <span>$89.999</span>
+                <button type="button"
+                    class="btn-agregar"
+                    data-id="1"
+                    data-nombre="HyperX Cloud II"
+                    data-precio="89999">
+                    Agregar
+                </button>
+            </div>
+
+            <div class="card">
+                <img src="../auris/HXCS2.webp" alt="">
+                <h3>Auriculares Hyperx Cloud Stinger II</h3>
+                <span>$104.999</span>
+
+                <button type="button"
+                    class="btn-agregar"
+                    data-id="7"
+                    data-nombre="HyperX Cloud Stinger II"
+                    data-precio="104999">
+                    Agregar
+                </button>
+            </div>
+
+            <div class="card">
+                <img src="../auris/Xtrike Me Gh-512w.webp" alt="">
+                <h3>Auriculares Xtrike Me Gh-512w</h3>
+                <span>$58.999</span>
+
+                <button type="button"
+                    class="btn-agregar"
+                    data-id="23"
+                    data-nombre="Xtrike Me Gh-512w"
+                    data-precio="58999">
+                    Agregar
+                </button>
+            </div>
+
+            <div class="card">
+                <img src="../auris/Redragon Hylas H260.webp" alt="">
+                <h3>Auriculares Redragon Alámbrico Hylas H260 Rgb</h3>
+                <span>$41.100</span>
+
+                <button type="button"
+                    class="btn-agregar"
+                    data-id="33"
+                    data-nombre="Redragon Hylas H260"
+                    data-precio="41100">
+                    Agregar
+                </button>
+            </div>
+
+            <div class="card">
+                <img src="../auris/Logitech G432.webp" alt="">
+                <h3>Auriculares Logitech G432</h3>
+                <span>$99.990</span>
+
+                <button type="button"
+                    class="btn-agregar"
+                    data-id="35"
+                    data-nombre="Logitech G432"
+                    data-precio="99990">
+                    Agregar
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!--================ CARRITO =================-->
+
+    <section id="carrito">
+
+        <div class="carrito-header">
+
+            <h2>Mi carrito</h2>
+
+            <button type="button" id="cerrarCarrito" aria-label="Cerrar carrito">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+        <div id="items-carrito">
+
+            <p class="carrito-vacio">
+                Tu carrito está vacío.
+            </p>
+
+        </div>
+
+        <div class="carrito-footer">
+
+            <h3>Total: $<span id="total">0</span></h3>
+
+            <button type="button" id="btnFinalizar">
+
+                Finalizar compra
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 GameZone Store</p>
+    </footer>
+
+</body>
+</html>
