@@ -90,18 +90,9 @@
     </nav>
 
         <div class="acciones">
-
             <input type="text" id="buscador">
-
             <i class="fa-solid fa-magnifying-glass"></i>
-            <div class="icono-carrito" id="btnCarrito">
-
-                <i class="fa-solid fa-cart-shopping"></i>
-
-                <span id="contador-carrito">0</span>
-
-            </div>
-
+            <i class="fa-solid fa-cart-shopping"></i>
         </div>
 
     </header>
@@ -142,7 +133,8 @@
                     <h1>LOS MEJORES<br>PERIFÉRICOS</h1>
 
                     <p>
-                        HyperX, Logitech, Redragon, Corsair y mucho más.
+                        HyperX, Logitech, Redragon, Razer,
+                        Corsair y mucho más.
                     </p>
 
                     <button type="button" onclick="location.href='marcas.html'">
@@ -152,7 +144,7 @@
                 </div>
 
                 <div class="hero-img">
-                    <img src="./logos/mosaico-Logos.png" alt="">
+                    <img src="/logos/mosaico-Logos2.png" alt="">
                 </div>
 
             </div>
@@ -169,14 +161,14 @@
                         por tiempo limitado.
                     </p>
 
-                    <button type="button" onclick="location.href='ofertas.html'">
+                    <button type="button">
                         Comprar ahora
                     </button>
 
                 </div>
 
                 <div class="hero-img">
-                    <img src="./combos/bannerOfertas.png" alt="">
+                    <img src="./combos/redragon S129w.webp" alt="">
                 </div>
 
             </div>
@@ -748,63 +740,31 @@ para agregar productos al carrito y almacenarlos en Local Storage.
         <!-- Paginación -->
         <div class="paginacion">
 
-            <!-- Flecha anterior -->
-            <button type="button" class="pagina-btn anterior disabled" aria-label="Anterior">
+            <button type="button" class="pagina-btn disabled" aria-label="Página anterior">
                 <i class="fa-solid fa-chevron-left"></i>
             </button>
 
-            <!-- Botones de páginas -->
-            <button type="button" class="pagina-btn numero active">1</button>
-            <button type="button" class="pagina-btn numero">2</button>
-            <button type="button" class="pagina-btn numero">3</button>
-            <button type="button" class="pagina-btn numero">4</button>
+            <button type="button" class="pagina-btn active">1</button>
+            <button type="button" class="pagina-btn">2</button>
+            <button type="button" class="pagina-btn">3</button>
 
-            <!-- Flecha siguiente -->
-            <button type="button" class="pagina-btn siguiente" aria-label="Siguiente">
+            <button type="button" class="pagina-btn" aria-label="Página siguiente">
                 <i class="fa-solid fa-chevron-right"></i>
             </button>
 
         </div>
+        <br>
+        <div>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="contador-carrito">0</span>
+            <section id="carrito">
+                <h2>Mi carrito</h2>
 
-    </section>
+                <div id="items-carrito"></div>
 
-
-    <!--================ CARRITO =================-->
-
-    <section id="carrito">
-
-        <div class="carrito-header">
-
-            <h2>Mi carrito</h2>
-
-            <button type="button" id="cerrarCarrito" aria-label="Cerrar carrito">
-
-                <i class="fa-solid fa-xmark"></i>
-
-            </button>
-
+                <h3>Total: $<span id="total">0</span></h3>
+            </section>
         </div>
-
-        <div id="items-carrito">
-
-            <p class="carrito-vacio">
-                Tu carrito está vacío.
-            </p>
-
-        </div>
-
-        <div class="carrito-footer">
-
-            <h3>Total: $<span id="total">0</span></h3>
-
-            <button type="button" id="btnFinalizar">
-
-                Finalizar compra
-
-            </button>
-
-        </div>
-
     </section>
 
     <!-- FOOTER -->

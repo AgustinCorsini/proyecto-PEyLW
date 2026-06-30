@@ -90,18 +90,9 @@
     </nav>
 
         <div class="acciones">
-
             <input type="text" id="buscador">
-
             <i class="fa-solid fa-magnifying-glass"></i>
-            <div class="icono-carrito" id="btnCarrito">
-
-                <i class="fa-solid fa-cart-shopping"></i>
-
-                <span id="contador-carrito">0</span>
-
-            </div>
-
+            <i class="fa-solid fa-cart-shopping"></i>
         </div>
 
     </header>
@@ -748,63 +739,33 @@ para agregar productos al carrito y almacenarlos en Local Storage.
         <!-- Paginación -->
         <div class="paginacion">
 
-            <!-- Flecha anterior -->
             <button type="button" class="pagina-btn anterior disabled" aria-label="Anterior">
                 <i class="fa-solid fa-chevron-left"></i>
             </button>
 
-            <!-- Botones de páginas -->
-            <button type="button" class="pagina-btn numero active">1</button>
-            <button type="button" class="pagina-btn numero">2</button>
-            <button type="button" class="pagina-btn numero">3</button>
-            <button type="button" class="pagina-btn numero">4</button>
+            <button type="button" class="pagina-btn active">1</button>
+            <button type="button" class="pagina-btn">2</button>
+            <button type="button" class="pagina-btn">3</button>
+            <button type="button" class="pagina-btn">4</button>
 
-            <!-- Flecha siguiente -->
+
             <button type="button" class="pagina-btn siguiente" aria-label="Siguiente">
                 <i class="fa-solid fa-chevron-right"></i>
             </button>
 
         </div>
+        <br>
+        <div>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="contador-carrito">0</span>
+            <section id="carrito">
+                <h2>Mi carrito</h2>
 
-    </section>
+                <div id="items-carrito"></div>
 
-
-    <!--================ CARRITO =================-->
-
-    <section id="carrito">
-
-        <div class="carrito-header">
-
-            <h2>Mi carrito</h2>
-
-            <button type="button" id="cerrarCarrito" aria-label="Cerrar carrito">
-
-                <i class="fa-solid fa-xmark"></i>
-
-            </button>
-
+                <h3>Total: $<span id="total">0</span></h3>
+            </section>
         </div>
-
-        <div id="items-carrito">
-
-            <p class="carrito-vacio">
-                Tu carrito está vacío.
-            </p>
-
-        </div>
-
-        <div class="carrito-footer">
-
-            <h3>Total: $<span id="total">0</span></h3>
-
-            <button type="button" id="btnFinalizar">
-
-                Finalizar compra
-
-            </button>
-
-        </div>
-
     </section>
 
     <!-- FOOTER -->

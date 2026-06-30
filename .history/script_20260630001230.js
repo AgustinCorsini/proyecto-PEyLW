@@ -167,31 +167,3 @@ btnSiguiente.addEventListener("click", ()=>{
 
 // Muestra la primera página al iniciar
 mostrarPagina(1);
-
-
-
-
-/*---------------- CARRITO ----------------*/
-
-// Obtiene el botón del carrito
-const btnCarrito = document.getElementById("btnCarrito");
-
-// Obtiene el panel lateral
-const carrito = document.getElementById("carrito");
-
-// Botón para cerrar el carrito
-const cerrarCarrito = document.getElementById("cerrarCarrito");
-
-// Abre o cierra el carrito
-btnCarrito.addEventListener("click", ()=>{
-
-    carrito.classList.toggle("abierto");
-
-});
-
-// Cierra el carrito
-cerrarCarrito.addEventListener("click", ()=>{
-
-    carrito.classList.remove("abierto");
-
-});

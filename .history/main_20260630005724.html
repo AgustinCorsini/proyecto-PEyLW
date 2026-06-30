@@ -94,6 +94,9 @@
             <input type="text" id="buscador">
 
             <i class="fa-solid fa-magnifying-glass"></i>
+
+            <i class="fa-regular fa-user"></i>
+
             <div class="icono-carrito" id="btnCarrito">
 
                 <i class="fa-solid fa-cart-shopping"></i>
@@ -768,9 +771,6 @@ para agregar productos al carrito y almacenarlos en Local Storage.
 
     </section>
 
-
-    <!--================ CARRITO =================-->
-
     <section id="carrito">
 
         <div class="carrito-header">
@@ -778,29 +778,19 @@ para agregar productos al carrito y almacenarlos en Local Storage.
             <h2>Mi carrito</h2>
 
             <button type="button" id="cerrarCarrito" aria-label="Cerrar carrito">
-
                 <i class="fa-solid fa-xmark"></i>
-
             </button>
 
         </div>
 
-        <div id="items-carrito">
-
-            <p class="carrito-vacio">
-                Tu carrito está vacío.
-            </p>
-
-        </div>
+        <div id="items-carrito"></div>
 
         <div class="carrito-footer">
 
             <h3>Total: $<span id="total">0</span></h3>
 
             <button type="button" id="btnFinalizar">
-
                 Finalizar compra
-
             </button>
 
         </div>
