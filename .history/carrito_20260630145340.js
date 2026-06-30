@@ -1,4 +1,6 @@
 /*---------------- Carrito ----------------*/
+// creo un carrito vacío.
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 // Obtiene el botón del carrito
 const btnCarrito = document.getElementById("btnCarrito");
@@ -25,8 +27,8 @@ cerrarCarrito.addEventListener("click", ()=>{
 
 /*---------------- Agregar Productos al Carrito ----------------*/
 
-// Recupera el carrito guardado o crea uno vacío
-let carritoProductos = JSON.parse(localStorage.getItem("carrito")) || [];
+// Arreglo donde se guardarán los productos
+let carritoProductos = [];
 
 // Botones "Agregar"
 const botonesAgregar = document.querySelectorAll(".btn-agregar");
@@ -54,9 +56,6 @@ botonesAgregar.forEach(boton => {
 
         // Lo agrega al arreglo
         carritoProductos.push(producto);
-
-        // Guarda el carrito en Local Storage
-        localStorage.setItem("carrito", JSON.stringify(carritoProductos));
 
         // Actualiza el carrito
         actualizarCarrito();
@@ -109,12 +108,8 @@ function eliminarProductos(){
         boton.addEventListener("click", ()=>{
             const indice = boton.dataset.indice;
             carritoProductos.splice(indice,1);
-            // Actualiza el Local Storage
-            localStorage.setItem("carrito", JSON.stringify(carritoProductos));
             actualizarCarrito();
 
         });
     });
 }
-// Al cargar la página muestra el carrito guardado
-actualizarCarrito();

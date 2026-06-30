@@ -55,9 +55,6 @@ botonesAgregar.forEach(boton => {
         // Lo agrega al arreglo
         carritoProductos.push(producto);
 
-        // Guarda el carrito en Local Storage
-        localStorage.setItem("carrito", JSON.stringify(carritoProductos));
-
         // Actualiza el carrito
         actualizarCarrito();
 
@@ -109,12 +106,8 @@ function eliminarProductos(){
         boton.addEventListener("click", ()=>{
             const indice = boton.dataset.indice;
             carritoProductos.splice(indice,1);
-            // Actualiza el Local Storage
-            localStorage.setItem("carrito", JSON.stringify(carritoProductos));
             actualizarCarrito();
 
         });
     });
 }
-// Al cargar la página muestra el carrito guardado
-actualizarCarrito();

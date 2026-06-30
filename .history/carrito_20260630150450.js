@@ -109,12 +109,8 @@ function eliminarProductos(){
         boton.addEventListener("click", ()=>{
             const indice = boton.dataset.indice;
             carritoProductos.splice(indice,1);
-            // Actualiza el Local Storage
-            localStorage.setItem("carrito", JSON.stringify(carritoProductos));
             actualizarCarrito();
 
         });
     });
 }
-// Al cargar la página muestra el carrito guardado
-actualizarCarrito();

@@ -116,5 +116,3 @@ function eliminarProductos(){
         });
     });
 }
-// Al cargar la página muestra el carrito guardado
-actualizarCarrito();
